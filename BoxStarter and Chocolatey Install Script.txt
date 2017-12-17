@@ -1,0 +1,36 @@
+Set-ExplorerOptions -showProtectedOSFiles -showFileExtensions 
+Enable-RemoteDesktop 
+cinst adobereader 
+cinst google-chrome-x64 
+cinst sysinternals 
+cinst git 
+cinst git.install 
+cinst IIS-WebServerRole -source windowsfeatures
+cinst you-need-a-budget
+cinst winmerge
+cinst whatsapp
+cinst fiddler
+cinst visualstudiocode
+cisnt nodejs.install
+cinst dotnet4.6
+cinst powershell
+cinst googledrive
+cinst google-backup-and-sync 
+cinst goodsync
+cinst garmin-express
+cinst dropbox
+cinst 7zip
+cinst powerbi
+cinst winrar
+cinst ccleaner
+cinst treesizefree 
+cinst windowsazurepowershell
+cinst azure-cli
+
+
+
+
+
+
+
+
