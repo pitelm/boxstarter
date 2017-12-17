@@ -35,6 +35,10 @@ cinst azure-cli
 #cinst procexp
 
 if (Test-PendingReboot) { Invoke-Reboot }
+
+npm install grunt-cli -g
+
+
 Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Google\Chrome\Application\chrome.exe"
 
 
