@@ -1,17 +1,23 @@
-Set-ExplorerOptions -showProtectedOSFiles -showFileExtensions 
+Set-ExplorerOptions -showProtectedOSFiles -showFileExtensions -showHidenFilesFoldersDrives 
 Enable-RemoteDesktop 
 cinst adobereader 
 cinst google-chrome-x64 
 cinst sysinternals 
 cinst git 
 cinst git.install 
+#cinst Microsoft-Hyper-V-All -source windowsFeatures
+#IIS installs
 cinst IIS-WebServerRole -source windowsfeatures
+cinst IIS-HttpCompressionDynamic -source windowsfeatures
+cinst IIS-ManagementScriptingTools -source windowsfeatures
+cinst IIS-WindowsAuthentication -source windowsfeatures
+
 cinst you-need-a-budget
 cinst winmerge
 cinst whatsapp
 cinst fiddler
 cinst visualstudiocode
-cisnt nodejs.install
+cinst nodejs.install
 cinst dotnet4.6
 cinst powershell
 cinst googledrive
@@ -26,8 +32,10 @@ cinst ccleaner
 cinst treesizefree 
 cinst windowsazurepowershell
 cinst azure-cli
+#cinst procexp
 
 
+Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Google\Chrome\Application\chrome.exe"
 
 
 
