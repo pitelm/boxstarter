@@ -11,7 +11,7 @@ cinst IIS-WebServerRole -source windowsfeatures
 cinst IIS-HttpCompressionDynamic -source windowsfeatures
 cinst IIS-ManagementScriptingTools -source windowsfeatures
 cinst IIS-WindowsAuthentication -source windowsfeatures
-
+if (Test-PendingReboot) { Invoke-Reboot }
 cinst you-need-a-budget
 cinst winmerge
 cinst whatsapp
@@ -34,7 +34,7 @@ cinst windowsazurepowershell
 cinst azure-cli
 #cinst procexp
 
-
+if (Test-PendingReboot) { Invoke-Reboot }
 Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Google\Chrome\Application\chrome.exe"
 
 
