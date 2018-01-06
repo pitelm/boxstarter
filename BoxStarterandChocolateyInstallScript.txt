@@ -42,7 +42,7 @@ npm install typescript -g
 
 
 Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Google\Chrome\Application\chrome.exe"
-
+Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles)\Microsoft VS Code\Code.exe"
 
 
 
