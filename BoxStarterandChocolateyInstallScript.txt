@@ -33,7 +33,6 @@ cinst treesizefree
 cinst windowsazurepowershell
 cinst azure-cli
 cinst github
-cinst google-backup-and-sync
 #cinst procexp
 
 if (Test-PendingReboot) { Invoke-Reboot }
@@ -46,7 +45,13 @@ npm install typescript -g
 Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Google\Chrome\Application\chrome.exe"
 Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles)\Microsoft VS Code\Code.exe"
 
+#Cleanup the disk
 
+# Remove update un-installers 
+Dism.exe /online /Cleanup-Image /StartComponentCleanup /ResetBase
+
+# Clean the disk
+C:\Windows\System32\cleanmgr.exe /d c:
 
 
 
