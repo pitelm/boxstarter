@@ -32,6 +32,8 @@ cinst ccleaner
 cinst treesizefree 
 cinst windowsazurepowershell
 cinst azure-cli
+cinst github
+cinst google-backup-and-sync
 #cinst procexp
 
 if (Test-PendingReboot) { Invoke-Reboot }
