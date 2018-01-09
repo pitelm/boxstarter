@@ -2,7 +2,7 @@ Set-ExplorerOptions -showProtectedOSFiles -showFileExtensions -showHidenFilesFol
 Enable-RemoteDesktop 
 cinst adobereader 
 cinst google-chrome-x64 
-cinst sysinternals 
+cinst procexp  
 cinst git 
 cinst git.install 
 #cinst Microsoft-Hyper-V-All -source windowsFeatures
@@ -43,7 +43,7 @@ npm install typescript -g
 
 
 Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Google\Chrome\Application\chrome.exe"
-Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles)\Microsoft VS Code\Code.exe"
+Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles)\Micros~4\Code.exe"
 
 #Cleanup the disk
 
